@@ -1,21 +1,23 @@
 <?php
+$output=true;
 $err='';
 $name='';
-	$email='';
-	$type='';
-	$comments='';
-if(!isset($_POST['submit'])) {
-    
+$email='';
+$course='';
 
+if(!isset($_POST['submit'])) {
+	$output=true;
 } else { 
 	$name = trim($_POST['name']);
 	$email = trim($_POST['email']);
 	$course = $_POST['course'];
 	if(empty($name)) {
-		$err = '<p>Заполните поле Имя!</p>';  
+		$err = 'Заполните поле Имя!';  
+		$output=true;
 	}        
 	if(empty($email)) {
-		$err = $err . '<p>Заполните поле E-mail!</p>';
+		$err = $err . 'Заполните поле E-mail!';
+		$output=true;
 	} 
   	if(!empty($name) && !empty($email) && !empty($course) && empty($err)) {
 		$epasts = 'newglads@yandex.ru';
@@ -24,8 +26,10 @@ if(!isset($_POST['submit'])) {
 		Имя: $name
 		Почта: $email
 		Курс: $course
-	MES;
+MES;
 		mail($epasts, $theme, $message);
+		$output=false;
 	} 
 }
 ?>
+
