@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Котейка</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"  rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="cats_css/cats_styles.css">
+    <link rel="stylesheet" href="../scripts/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../scripts/owlcarousel/owl.theme.default.css">
+
+    <script src="../scripts/html5shiv.js"></script>
+    <script src="../scripts/handlers.js"></script>
+    <script src="../scripts/jquery.js"></script>
+    <script src="../scripts/owlcarousel/owl.carousel.min.js" defer></script>
+    <script src="cats_scripts/cats_carousel.js" defer></script>
+    <script src="../scripts/smoothScroll.js" defer></script>
+    <script src="cats_scripts/mobile_menu.js" defer></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=3A5fcf1987867fd91fddf99028a8d45a4e0650920966fd415b0caaf8dcd7697442" type="text/javascript"></script>
+    <script src="cats_scripts/icon_customImage.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="burger-menu" class="hidden-menu-ticker">
+            <label class="btn-menu" for="burger-menu">
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+            </label>
+            <ul>
+                <li><a href="#why">Почему мы?</a></li>
+                <li><a href="#numuri">Номера</a></li>
+                <li><a href="#atsauk">Отзывы</a></li>
+                <li><a href="#contacts">Как нас найти</a></li>
+                <li class="tel">8 (800) 333-55-99</li>
+                <li>
+                    <div class="social">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferer"><img
+                                src="img/logo_fb.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferer"><img
+                                src="img/logo_insta.png" alt="Instagramm"></a>
+                        <a href="https://www.vk.com" target="_blank" rel="noopener noreferer"><img src="img/logo_vk.png"
+                                alt="VK"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <div class="banner-text">
+                <p>Санкт-Петербург</p>
+                <h1>Котейка</h1>
+                <h2>Уютная гостиница для котов и кошек</h2>
+                <a href="catalog.html" class="button button-reserve1">Забронировать</a>
+            </div>
+        </div>
+    </header>
+    <div class="why" id="why">
+        <h2 class="screen_name">Почему мы?</h2>
+        <div class="why-items">
+            <div class="item">
+                <img src="img/why-temp.svg" alt="Комфортная температура">
+                <h3>Комфортная температура</h3>
+                <p>Во всех номерах поддерживается комфортная температура в пределах 23 - 25 градусов. В каждом номере
+                    можно дополнительно отрегулировать температуру.</p>
+            </div>
+            <div class="item">
+                <img src="img/why-video.svg" alt="Видеонаблюдение">
+                <h3>Видеонаблюдение</h3>
+                <p>Мы предоставляем доступ в нашу систему. Вы сможете следить за своим питомцем со своего смартфона или
+                    компьютера.</p>
+            </div>
+            <div class="item">
+                <img src="img/why-taxi.svg" alt="Услуги Зоотакси">
+                <h3>Услуги Зоотакси</h3>
+                <p>Мы приедем за вашим питомцем в любой район Санкт-Петербурга.</p>
+            </div>
+            <div class="item">
+                <img src="img/why_bar.svg" alt="Сбалансированное питание">
+                <h3>Сбалансированное питание</h3>
+                <p>Вы можете привезти свой корм или доверить рацион своего питомца нашим профессионалам.</p>
+            </div>
+            <div class="item">
+                <img src="img/why-walk.svg" alt="Ежедневные прогулки">
+                <h3>Ежедневные прогулки</h3>
+                <p>По вашему желанию мы выгуливаем вашего питомца два раза в день на специализированной закрытой              территории.</p>
+            </div>
+            <div class="item">
+                <img src="img/why-vets.svg" alt="Лучшие ветеринары">
+                <h3>Лучшие ветеринары</h3>
+                <p>В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="numuri" id="numuri">
+        <h2 class="screen_name">Номера</h2>
+        <div class="owl-carousel owl-theme">
+            <figure>
+                <img src="img/numur_photo2-1.jpg" alt="Номера отеля">
+                <figcaption>
+                    <h3>Эконом плюс</h3>
+                    <ul>                        
+                        <li>Площадь - 0,90 м2</li>
+                        <li>Размеры (ШхГхВ) — 90х100х180 см</li>
+                        <li>Цена за сутки: 200₽</li>
+                    </ul>
+                    <a href="room2.html" class="button button-reserve2">Забронировать</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/numur_photo3-1.jpg" alt="Номера отеля">
+                <figcaption>
+                    <h3>Комфорт</h3>
+                    <ul>                        
+                        <li>Площадь - 1,13 м2</li>
+                        <li>Размеры (ШхГхВ) - 100х125х180 см</li>
+                        <li>Цена за сутки: 250₽</li>
+                    </ul>
+                    <a href="room3.html" class="button button-reserve2">Забронировать</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/numur_photo4-1.jpg" alt="Номера отеля">
+                <figcaption>
+                    <h3>Сьют</h3>
+                    <ul>                        
+                        <li>Площадь - 1,56 м2</li>
+                        <li>Размеры (ШхГхВ) - 125х125х180 см</li>
+                        <li>Цена за сутки: 350₽</li>
+                    </ul>
+                    <a href="room4.html" class="button button-reserve2">Забронировать</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/numur_photo6-1.jpg" alt="Номера отеля">
+                <figcaption>
+                   <h3>Супер-Люкс</h3> 
+                   <ul>                        
+                        <li>Площадь - 2,88 м2</li>
+                        <li>Размеры (ШхГхВ) - 180х160х180 см</li>
+                        <li>Цена за сутки: 600₽</li>
+                    </ul>
+                    <a href="room6.html" class="button button-reserve2">Забронировать</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/numur_photo1-1.jpg" alt="Номера отеля">
+                <figcaption>
+                    <h3>Эконом</h3>
+                    <ul>                        
+                        <li>Площадь - 0,63 м2</li>
+                        <li>Размеры (ШхГхВ) - 90х70х180 см</li>
+                        <li>Цена за сутки: 100₽</li>
+                    </ul>
+                    <a href="room1.html" class="button button-reserve2">Забронировать</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/numur_photo5-1.jpg" alt="Номера отеля">
+                <figcaption>
+                    <h3>Люкс</h3>
+                    <ul>                        
+                        <li>Площадь - 2,56 м2</li>
+                        <li>Размеры (ШхГхВ) - 160х160х180 см</li>
+                        <li>Цена за сутки: 500₽</li>
+                    </ul>
+                    <a href="room5.html" class="button button-reserve2">Забронировать</a>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+    <div class="atsauk" id="atsauk">
+        <h2 class="screen_name">Отзывы</h2>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <p><span>“</span>Первый раз пришлось оставить нашего котика в&nbsp;гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует. И мы и котик остались очень довольны!</p>
+                <p class="details">
+                    <span class="name">Валерия Гришаева</span>
+                    <span class="date">15 ноября, 2019</span>
+                </p>
+            </div>
+            <div class="item">
+                <p><span>“</span>Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.</p>
+                <p class="details">
+                    <span class="name">Екатерина Минаева</span>
+                    <span class="date">10 октября, 2019</span>
+                </p>
+            </div>
+            <div class="item">
+                <p><span>“</span>Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.</p>
+                <p class="details">
+                    <span class="name">Павел Нечаев</span>
+                    <span class="date">2 августа, 2019</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="contacts" id="contacts">
+        <div class="info">
+            <h2 class="screen_name">Как нас найти</h2>
+            <h5>Адрес</h5>
+            <p>Санкт-Петербург, <br>
+                ул Большая Конюшенная, д 19</p>
+            <h5>Режим работы</h5>
+            <p>Ежедневно, с 9:00 до 20:00</p>
+            <h5>Телефон</h5>
+            <p>8 (800) 333-55-99</p>
+            <h5>E-mail</h5>
+            <p>info@cat-hotel.ru</p>
+            <h5>Социальные сети</h5>
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferer"><img src="img/logo_fb.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferer"><img src="img/logo_insta.png" alt="Instagramm"></a>
+                <a href="https://www.vk.com" target="_blank" rel="noopener noreferer"><img src="img/logo_vk.png" alt="VK"></a>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#why">Почему мы?</a></li>
+                <li><a href="#numuri">Номера</a></li>
+                <li><a href="#atsauk">Отзывы</a></li>
+                <li><a href="#contacts">Как нас найти</a></li>
+            </ul>
+        </nav>
+        <p>
+            <span>&copy; Вёрстка: Ирина Антипина, 2021.</span>
+            <span>Политика конфиденциальности</span>
+        </p>
+    </footer>
+</body>
+</html>

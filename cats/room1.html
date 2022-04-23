@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Котейка</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../scripts/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../scripts/owlcarousel/owl.theme.default.css">
+    <link rel="stylesheet" href="cats_css/cats_styles.css">
+    <script src="../scripts/html5shiv.js"></script>
+    <script src="../scripts/handlers.js"></script>
+    <script src="../scripts/jquery.js"></script>
+    <script src="../scripts/owlcarousel/owl.carousel.min.js" defer></script>
+    <script src="cats_scripts/cats_carousel.js" defer></script>
+    <script src="cats_scripts/mobile_menu.js" defer></script>
+    <script src="cats_scripts/cats_popup.js" defer></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=3A5fcf1987867fd91fddf99028a8d45a4e0650920966fd415b0caaf8dcd7697442" type="text/javascript"></script>
+    <script src="cats_scripts/icon_customImage.js" defer></script>
+</head>
+<body>
+    <header>       
+        <nav>
+            <input type="checkbox" id="burger-menu" class="hidden-menu-ticker">
+            <label class="btn-menu" for="burger-menu">
+              <span class="first"></span>
+              <span class="second"></span>
+              <span class="third"></span>
+            </label>
+            <ul>
+                <li><a href="index.html#why">Почему мы?</a></li>
+                <li><a href="catalog.html">Номера</a></li>
+                <li><a href="index.html#atsauk">Отзывы</a></li>
+                <li><a href="#contacts">Как нас найти</a></li>
+                <li class="tel">8 (800) 333-55-99</li>
+                <li>
+                    <div class="social">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferer"><img src="img/logo_fb.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferer"><img src="img/logo_insta.png" alt="Instagramm"></a>
+                        <a href="https://www.vk.com" target="_blank" rel="noopener noreferer"><img src="img/logo_vk.png" alt="VK"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>        
+    </header>
+    <div class="room-detail">
+        <div class="room">
+            <div class="picture"><img src="img/numur_photo1-1.jpg" alt="Номера отеля"></div>
+            <div class="info">
+                <h2 class="screen_name">Эконом</h2>
+                <p>Размеры (ШхГхВ) - 90х70х180 см</p>
+                <p>Площадь - 0,63 м2</p>
+                <p>Оснащение номера</p>
+                <p class="none"></p>
+                <p>Цена за сутки: <span>100₽</span></p>
+                <a href="#" class="button button-reserve2">Забронировать</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup hidden">
+        <div class="popup-content">
+            <h2 class="screen_name">Забронировать номер</h2>
+            <form method="post" action="#">
+                <div class="row">    
+                    <input type="text" name="name" id="name" placeholder="Ваше имя">
+                    <label for="name">Ваше имя</label>
+                </div>
+                <div class="row">
+                    <input type="text" name="pet" id="pet" placeholder="Имя питомца">
+                    <label for="pet">Имя питомца</label>
+                </div>
+                <div class="row">
+                    <input type="text" name="tel" id="tel" placeholder="Телефон">
+                    <label for="tel">Телефон</label>
+                </div>
+                <div class="row">
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="date">
+                    <span>Дата заезда</span>
+                    <div class="date-fields">
+                        <label for="from">c</label>
+                        <input type="text" name="from" id="from" placeholder="26.01.2020" size="10">
+                        <label for="till">по</label>
+                        <input type="text" name="till" id="till" placeholder="26.02.2020" size="10">
+                    </div>
+                </div>                
+               <button class="button button-reserve2">Отправить заявку</button>
+            </form>           
+            <img src="img/close.svg" alt="Закрыть" class="close-button">          
+        </div>
+    </div>
+
+    <div class="thank-popup hidden">
+        <div class="thank-popup-content">
+            <h2 class="screen_name">Спасибо за заявку!</h2>
+            <p>Мы свяжемся с вами в ближайшее время</p>
+            <button class="button button-reserve2">OK</button>
+            <img src="img/close.svg" alt="Закрыть" class="close-button">
+        </div>    
+    </div>
+
+    <div class="numuri" id="numuri">
+        <h2 class="screen_name">Другие номера</h2>
+        <div class="owl-carousel owl-theme">
+            <figure>
+                <img src="img/numur_photo2-1.jpg" alt="Номера отеля" class="photo">
+                <figcaption>
+                    <ul>
+                        <li>Эконом плюс</li>
+                        <li>Площадь - 0,90 м2</li>
+                        <li>Размеры (ШхГхВ) — 90х100х180 см</li>
+                        <li>Цена за сутки: 200₽</li>
+                    </ul>
+                        <a href="room2.html" class="button button-reserve2">Забронировать</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/numur_photo3-1.jpg" alt="Номера отеля" class="photo">
+                <figcaption>
+                    <ul>
+                        <li>Комфорт</li>
+                        <li>Площадь - 1,13 м2</li>
+                        <li>Размеры (ШхГхВ) - 100х125х180 см</li>
+                        <li>Цена за сутки: 250₽</li>
+                    </ul>
+                    <a href="room3.html" class="button button-reserve2">Забронировать</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/numur_photo4-1.jpg" alt="Номера отеля" class="photo">
+                <figcaption>
+                    <ul>
+                        <li>Сьют</li>
+                        <li>Площадь - 1,56 м2</li>
+                        <li>Размеры (ШхГхВ) - 125х125х180 см</li>
+                        <li>Цена за сутки: 350₽</li>
+                    </ul>
+                    <a href="room4.html" class="button button-reserve2">Забронировать</a>
+                </figcaption>
+            </figure>  
+            <figure>
+                <img src="img/numur_photo6-1.jpg" alt="Номера отеля" class="photo">
+                <figcaption>
+                    <ul>
+                        <li>Супер-Люкс</li>
+                        <li>Площадь - 2,88 м2</li>
+                        <li>Размеры (ШхГхВ) - 180х160х180 см</li>
+                        <li>Цена за сутки: 600₽</li>
+                    </ul>
+                    <a href="room6.html" class="button button-reserve2">Забронировать</a>
+                </figcaption>
+            </figure>            
+            <figure>
+                <img src="img/numur_photo5-1.jpg" alt="Номера отеля" class="photo">
+                <figcaption>
+                    <ul>
+                        <li>Люкс</li>
+                        <li>Площадь - 2,56 м2</li>
+                        <li>Размеры (ШхГхВ) - 160х160х180 см</li>
+                        <li>Цена за сутки: 500₽</li>
+                    </ul>
+                    <a href="room5.html" class="button button-reserve2">Забронировать</a>
+                </figcaption>
+            </figure>                
+        </div>             
+    </div>
+    <div class="contacts" id="contacts">
+        <div class="info">
+            <h2 class="screen_name">Как нас найти</h2>
+            <h5>Адрес</h5>
+            <p>Санкт-Петербург, <br>
+            ул Большая Конюшенная, д 19</p>
+            <h5>Режим работы</h5>
+            <p>Ежедневно, с 9:00 до 20:00</p>
+            <h5>Телефон</h5>
+            <p>8 (800) 333-55-99</p>
+            <h5>E-mail</h5>
+            <p>info@cat-hotel.ru</p>
+            <h5>Социальные сети</h5>
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferer"><img src="img/logo_fb.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferer"><img src="img/logo_insta.png" alt="Instagramm"></a>
+                <a href="https://www.vk.com" target="_blank" rel="noopener noreferer"><img src="img/logo_vk.png" alt="VK"></a>
+            </div>
+        </div>
+        <div id="map"></div>        
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html#why">Почему мы?</a></li>
+                <li><a href="catalog.html">Номера</a></li>
+                <li><a href="index.html#atsauk">Отзывы</a></li>
+                <li><a href="#contacts">Как нас найти</a></li>
+            </ul>
+        </nav>
+        <p>
+            <span>&copy; Вёрстка: Ирина Антипина, 2021.</span>
+            <span>Политика конфиденциальности</span>
+        </p>
+    </footer>
+</body>
+</html>

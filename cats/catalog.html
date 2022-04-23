@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Котейка</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="cats_css/cats_styles.css">
+    <script src="../scripts/html5shiv.js"></script>
+    <script src="../scripts/handlers.js"></script>
+    <script src="../scripts/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="cats_scripts/mobile_menu.js" defer></script>
+    <script src="cats_scripts/cats_filters.js" defer></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=3A5fcf1987867fd91fddf99028a8d45a4e0650920966fd415b0caaf8dcd7697442" type="text/javascript"></script>
+    <script src="cats_scripts/icon_customImage.js" defer></script>
+    <script src="cats_scripts/cats_catalog_tooltips.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="burger-menu" class="hidden-menu-ticker">
+            <label class="btn-menu" for="burger-menu">
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+            </label>
+            <ul>
+                <li><a href="index.html#why">Почему мы?</a></li>
+                <li><a href="index.html#numuri">Номера</a></li>
+                <li><a href="index.html#atsauk">Отзывы</a></li>
+                <li><a href="#contacts">Как нас найти</a></li>
+                <li class="tel">8 (800) 333-55-99</li>
+                <li>
+                    <div class="social">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferer"><img
+                                src="img/logo_fb.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferer"><img
+                                src="img/logo_insta.png" alt="Instagramm"></a>
+                        <a href="https://www.vk.com" target="_blank" rel="noopener noreferer"><img src="img/logo_vk.png"
+                                alt="VK"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="catalog">
+        <div class="catalog_header">
+            <h1 class="screen_name">Наши номера</h1>
+            <div class="filter_button">
+                <img src="img/filter.svg" alt="фильтры">
+                <span>Фильтры</span>
+            </div>
+        </div>
+        <div class="catalog-content">
+            <div class="filter">
+                <div class="filter_popup_content">
+                    <form action="#">                        
+                        <div class="square">
+                            <h4>Площадь</h4>
+                            <input type="checkbox" name="square" id="ch1" checked>
+                            <label for="ch1">0,63 м2</label><br>
+                            <input type="checkbox" name="square" id="ch2" checked>
+                            <label for="ch2">0,90 м2</label><br>
+                            <input type="checkbox" name="square" id="ch3" checked>
+                            <label for="ch3">1,13 м2</label><br>
+                            <input type="checkbox" name="square" id="ch4" checked>
+                            <label for="ch4">1,56 м2</label><br>
+                            <input type="checkbox" name="square" id="ch5" checked>
+                            <label for="ch5">2,56 м2</label><br>
+                            <input type="checkbox" name="square" id="ch6" checked>
+                            <label for="ch6">2,88 м2</label>
+                        </div>
+
+                        <div class="gadgets">
+                            <h4>Оснащение номера</h4>
+                            <input type="checkbox" name="gadgets" id="n1" value="Пустой номер" checked>
+                            <label for="n1">Пустой номер</label><br>
+                            <input type="checkbox" name="gadgets" id="n2" value="Лежак" checked>
+                            <label for="n2">Лежак</label><br>
+                            <input type="checkbox" name="gadgets" id="n3" value="Когтеточка" checked>
+                            <label for="n3">Когтеточка</label><br>
+                            <input type="checkbox" name="gadgets" id="n4" value="Игровой комплекс" checked>
+                            <label for="n4">Игровой комплекс</label><br>
+                            <input type="checkbox" name="gadgets" id="n5" value="Домик" checked>
+                            <label for="n5">Домик</label>
+                        </div>
+                        <a href="#" id="apply-filter">Показать</a>
+                        <a href="#" id="non-filter">Сбросить фильтр</a>
+                    </form>
+                    <div class="close-button" id="close-filter">
+                        <img src="img/close.svg" alt="Закрыть">
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="img/numur_photo1-2.jpg" alt="Карточка номера" class="photo">
+                    <div class="info">
+                        <h4>Эконом</h4>
+                        <p>Размеры (ШхГхВ) - 90х70х180 см</p>
+                        <p>Площадь - 0,63 м2</p>
+                        <p>Оснащение номера <img src="img/none.svg" alt="Пустой номер" title="Пустой номер"></p>
+                        <p>Цена за сутки: <span>100₽</span></p>
+                        <a href="room1.html" class="button button-reserve2">Забронировать</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/numur_photo2-2.jpg" alt="Карточка номера" class="photo">
+                    <div class="info">
+                        <h4>Эконом плюс</h4>
+                        <p>Размеры (ШхГхВ) - 90х100х180 см</p>
+                        <p>Площадь - 0,90 м2</p>
+                        <p>Оснащение номера <img src="img/bed.svg" alt="Лежак" title="Лежак"><img src="img/kogti.svg" alt="Когтеточка" title="Когтеточка"></p>
+                        <p>Цена за сутки: <span>200₽</span></p>
+                        <a href="room2.html" class="button button-reserve2">Забронировать</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/numur_photo3-1.jpg" alt="Карточка номера" class="photo">
+                    <div class="info">
+                        <h4>Комфорт</h4>
+                        <p>Размеры (ШхГхВ) - 100х125х180 см</p>
+                        <p>Площадь - 1,13 м2</p>
+                        <p>Оснащение номера <img src="img/bed.svg" alt="Лежак" title="Лежак"><img src="img/kogti.svg" alt="Когтеточка" title="Когтеточка"><img src="img/igra.svg" alt="Игровой комплекс" title="Игровой комплекс"></p>
+                        <p>Цена за сутки: <span>250₽</span></p>
+                        <a href="room3.html" class="button button-reserve2">Забронировать</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/numur_photo4-1.jpg" alt="Карточка номера" class="photo">
+                    <div class="info">
+                        <h4>Сьют</h4>
+                        <p>Размеры (ШхГхВ) - 125х125х180 см</p>
+                        <p>Площадь - 1,56 м2</p>
+                        <p>Оснащение номера <img src="img/bed.svg" alt="Лежак" title="Лежак"><img src="img/kogti.svg" alt="Когтеточка" title="Когтеточка"><img src="img/igra.svg" alt="Игровой комплекс" title="Игровой комплекс"></p>
+                        <p>Цена за сутки: <span>350₽</span></p>
+                        <a href="room4.html" class="button button-reserve2">Забронировать</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/numur_photo5-1.jpg" alt="Карточка номера" class="photo">
+                    <div class="info">
+                        <h4>Люкс</h4>
+                        <p>Размеры (ШхГхВ) - 160х160х180 см</p>
+                        <p>Площадь - 2,56 м2</p>
+                        <p>Оснащение номера <img src="img/bed.svg" alt="Лежак" title="Лежак"><img src="img/kogti.svg" alt="Когтеточка" title="Когтеточка"><img src="img/igra.svg" alt="Игровой комплекс" title="Игровой комплекс"><img src="img/dom.svg" alt="Домик" title="Домик"></p>
+                        <p>Цена за сутки: <span>500₽</span></p>
+                        <a href="room5.html" class="button button-reserve2">Забронировать</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/numur_photo6-1.jpg" alt="Карточка номера" class="photo">
+                    <div class="info">
+                        <h4>Супер-Люкс</h4>
+                        <p>Размеры (ШхГхВ) - 180х160х180 см</p>
+                        <p>Площадь - 2,88 м2</p>
+                        <p>Оснащение номера <img src="img/bed.svg" alt="Лежак" title="Лежак"><img src="img/kogti.svg" alt="Когтеточка" title="Когтеточка"><img src="img/igra.svg" alt="Игровой комплекс" title="Игровой комплекс"><img src="img/dom.svg" alt="Домик" title="Домик"></p>
+                        <p>Цена за сутки: <span>600₽</span></p>
+                        <a href="room6.html" class="button button-reserve2">Забронировать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="discount-wrapper">
+        <div class="discount">
+            <p>Каждый 7-й день <span>бесплатно!</span></p>
+            <p>Акция действует при размещении <br>в номерах “Люкс” и “Супер-Люкс”</p>
+            <a href="catalog.html" class="button button-reserve1">Забронировать</a>
+        </div>
+    </div>
+    <div class="contacts" id="contacts">
+        <div class="info">
+            <h2 class="screen_name">Как нас найти</h2>
+            <h5>Адрес</h5>
+            <p>Санкт-Петербург, <br>
+                ул Большая Конюшенная, д 19</p>
+            <h5>Режим работы</h5>
+            <p>Ежедневно, с 9:00 до 20:00</p>
+            <h5>Телефон</h5>
+            <p>8 (800) 333-55-99</p>
+            <h5>E-mail</h5>
+            <p>info@cat-hotel.ru</p>
+            <h5>Социальные сети</h5>
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferer"><img src="img/logo_fb.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferer"><img src="img/logo_insta.png" alt="Instagramm"></a>
+                <a href="https://www.vk.com" target="_blank" rel="noopener noreferer"><img src="img/logo_vk.png" alt="VK"></a>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html#why">Почему мы?</a></li>
+                <li><a href="index.html#numuri">Номера</a></li>
+                <li><a href="index.html#atsauk">Отзывы</a></li>
+                <li><a href="#contacts">Как нас найти</a></li>
+            </ul>
+        </nav>
+        <p>
+            <span>&copy; Вёрстка: Ирина Антипина, 2021.</span>
+            <span>Политика конфиденциальности</span>
+        </p>
+    </footer>
+</body>
+</html>
