@@ -1,0 +1,232 @@
+header {
+    padding: 9px 21px 30px 22px;
+    max-width: 768px;
+}
+.logo {
+    display: block;
+    width: auto;
+}
+.logo span {
+    display: none;
+}
+.search {
+    display: none;
+    width: 90%;
+    min-width: 280px;
+    background: rgba(238, 238, 238, 1) url(../images/search-icon.png) no-repeat right 14px center;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    z-index: 50;    
+}
+.search-mobile {
+    display: block;
+    width: 37px;
+    height: 37px;
+    background:  url(../images/search-icon.png) no-repeat center;
+    border: none;
+}
+.search-close {
+    background:  url(../images/close.png) no-repeat center;
+}
+.header-form {
+    display: block;
+    padding-right: 0;
+    padding-left: 0;
+    flex-grow: 0;
+}
+.cartIcon {
+    position: absolute;
+    right: 10px;
+    top: 110px;
+    z-index: 40;
+}
+.slider {
+    max-width: 100%;
+    padding: 0;
+}
+.slider-item {
+    border-radius: 0;
+    width: 100%;    
+    padding: 38px 32px;
+    background-position: right -200px  top;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    margin-left: 5px; 
+}
+.owl-carousel .owl-nav button.owl-next {
+    margin-right: 5px;;
+}
+.owl-nav {
+    right: auto;
+    bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+h1 {
+    font-size: 35px;
+    line-height: 146%;
+    padding-top: 40px;;
+}
+.slider-item h2 {
+    margin: 35px 0 60px;
+}
+.slider-btn {
+    width: 260px;
+    margin: 0 auto 30px;
+    display: block;
+}
+.bonus {
+    flex-direction: column;
+    gap: 33px;
+    max-width: 100%;
+    margin: 33px auto 110px;
+    padding: 0 9px;
+}
+section h2  {
+    margin-bottom: 27px;   
+    line-height: 120%; 
+}
+.delivery {
+    max-width: 768px;
+    padding: 0 22px;
+}
+.prepare {
+    margin-bottom: 50px;
+}
+.food-categories {
+    max-width: 768px;
+    padding: 0 22px;
+}
+.categories ul {
+    margin: 50px 0 21px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.food-examples {
+    gap: 34px;
+}
+.food-item { 
+    flex-grow: 0;
+    max-width: 100%;    
+}
+.food-item img {
+    max-width: 50%;
+    border-radius: 20px 20px 0 0;
+    margin-left: 25%;
+}
+.food-item h4 {
+    line-height: 115%;
+    margin: 5px 24px 13px 23px;
+}
+.food-price {
+    margin: 15px 24px 16px 23px;
+}
+.food-cart {
+    padding: 16px 25px;
+}
+.moreFood {
+    margin: 34px auto 0;
+    width: 100%;
+    max-width: 315px;
+}
+.benefits {
+    max-width: 768px;
+    padding: 50px 25px 86px;
+}
+.benefits-items {
+    margin-top: 20px;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+.benefits-card {
+    flex-basis: 270px;
+    flex-grow: 0;
+}
+footer {
+    max-width: 768px;
+    padding: 21px 25px;
+    flex-direction: column;
+}
+.footer-info {
+    flex-direction: column;
+    gap: 21px;
+}
+footer .logo {
+    display: flex;
+    gap: 11px;
+    width: 130px;
+}
+footer .logo span {
+    display: inline;
+}
+footer ul {
+    align-self: flex-start;
+    flex-direction: column;
+    gap: 14px;
+}
+footer ul a {
+    font-size: 16px;
+    text-decoration: underline;
+    color: #000;
+}
+.social {
+    align-items: flex-start;
+    margin-top: 29px;
+}
+.social img {
+    margin-left: 20px;
+    vertical-align: middle;
+}
+.social img:first-of-type {
+    margin-left: 0;;
+}
+.product-page {
+    position: fixed;
+    display: none;    
+}
+.page-content {
+    position: relative;
+    height: 100vh;     
+}
+.product-page .cartIcon {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.back {
+    max-width: 768px;
+    margin: 0 auto;
+}
+.product-card {
+    max-width: 768px;
+    flex-direction: column;   
+    margin: 0 0 20px;
+    padding: 0;
+    gap: 0;
+}
+.product {
+    flex-direction: column;
+    max-width: 768px;
+    gap: 0;
+    margin-bottom: 30px;
+    padding: 0;
+}
+.rating {
+    margin-top: 0px;
+}
+.product-info {
+    padding-right: 20px;
+    width: 100%;
+}
+.description {
+    margin-right: 12px;
+}
+.product-about {
+    min-width: 100%;
+    padding: 0 20px;
+}
+.order {
+    padding: 0 20px;
+}

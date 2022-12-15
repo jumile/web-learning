@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../scripts/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../scripts/owlcarousel/owl.theme.default.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 768px)">    
+    <script src="../scripts/jquery.js" defer></script>
+    <script src="../scripts/owlcarousel/owl.carousel.min.js" defer></script> 
+    <script src="scripts/start_carousel.js" defer></script>
+    <script src="scripts/tabs-categ.js" defer></script>
+    <script src="scripts/tabs-product.js" defer></script>
+    <script src="scripts/productPage.js" defer></script>
+    <script src="scripts/search.js" defer></script> 
+    <title>Индекс Еда</title>
+</head> 
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип">
+            <span>индекс еда</span>
+        </div>
+        <div class="header-form">
+            <input class="search" type="text" placeholder="Блюда" >
+            <button class="enter">Войти</button>
+        </div>
+        <button class="search-mobile"></button>
+        <button class="cartIcon">
+            <div class="cartIndex">12</div>
+        </button>
+    </header>
+    <div class="slider owl-carousel">
+        <div class="slider-item slider-bg1">
+            <h1>Неделя летних овощей</h1>
+            <h2>Специальная овощная корзина. Новые продукты, специальные цены, скидки!</h2>
+            <button class="slider-btn">Заказать со скидкой</button>
+        </div>
+        <div class="slider-item slider-bg2">
+            <h1>Витаминная неделя</h1>
+            <h2>Специальная овощная корзина. Новые продукты, специальные цены, скидки!</h2>
+            <button class="slider-btn">Заказать со скидкой</button>
+        </div>
+        <div class="slider-item slider-bg3">
+            <h1>Неделя осенних овощей</h1>
+            <h2>Специальная овощная корзина. Новые продукты, специальные цены, скидки!</h2>
+            <button class="slider-btn">Заказать со скидкой</button>
+        </div>
+    </div>
+    <div class="bonus">
+        <div class="bonus-item bonus-bg1">
+            <h3>Сладкая корзина</h3>
+            <p>Произвольный выбор десертов по Вашему желанию.</p>
+            <p class="price">от 1 300 ₽</p>
+            <p>стоимость доставки до 200 ₽</p>
+            <button class="bonus-btn">Собрать корзину</button>
+        </div>
+        <div class="bonus-item bonus-bg2">
+            <h3>Минимум усилий</h3>
+            <p>Произвольный выбор продуктов по Вашему желанию.</p>
+            <p class="price">от 700 ₽</p>
+            <p>стоимость доставки до 200 ₽</p>
+            <button class="bonus-btn">Собрать корзину</button>
+        </div>
+    </div>
+    <section class="delivery">
+    <h2>Доставка готовой еды на неделю</h2>
+        <div class="prepare">
+            <figure>
+                <img src="images/prep_zozh.png" alt="ЗОЖ">
+                <figcaption class="grey bg-lime">ЗОЖ</figcaption>
+            </figure>
+            <figure>
+                <img src="images/prep_saknes.png" alt="Овощное">
+                <figcaption class="white bg-sakn">Овощное</figcaption>
+            </figure>
+            <figure>
+                <img src="images/prep_meat.png" alt="Мясное">
+                <figcaption class="white bg-pink">Мясное</figcaption>
+            </figure>
+            <figure>
+                <img src="images/prep_bird.png" alt="Птица">
+                <figcaption class="white bg-orange">Птица</figcaption>
+            </figure>
+            <figure>
+                <img src="images/prep_fish.png" alt="Рыбное">
+                <figcaption class="white bg-red">Рыбное</figcaption>
+            </figure>
+            <figure>
+                <img src="images/prep_child.png" alt="Детское">
+                <figcaption class="grey bg-yellow">Детское</figcaption>
+            </figure>
+            <figure>
+                <img src="images/prep_adult.png" alt="Родителям">
+                <figcaption class="grey bg-green">Родителям</figcaption>
+            </figure>
+            <figure>
+                <img src="images/prep_svetki.png" alt="Праздничное">
+                <figcaption class="grey bg-white">Праздничное</figcaption>
+            </figure>
+        </div>
+    </section> 
+    <section class="categories">
+        <div class="food-categories"> 
+            <h2>Категории блюд</h2>
+            <nav>            
+                <ul>
+                    <li><a href="#" class="active" data-heading="popular">Популярные блюда</a></li>
+                    <li><a href="#" data-heading="sakni">Овощное</a></li>
+                    <li><a href="#" data-heading="meat">Мясное</a></li>
+                </ul>              
+            </nav> 
+            <div class="food-examples" data-content="popular">
+                <div class="food-item">
+                    <img src="images/food-ex1.png" alt="Куриные крылья под соусом Терияки">
+                    <h4>Куриные крылья под соусом Терияки</h4>
+                    <p>Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                    <div class="food-price">
+                        <div class="food-details">
+                            <span class="price">260 ₽</span>
+                            <span class="weight">500 гр</span>
+                        </div>
+                        <button class="food-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <img src="images/food-ex1.png" alt="Куриные крылья под соусом Терияки">
+                    <h4>Куриные крылья под соусом Терияки</h4>
+                    <p>Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                    <div class="food-price">
+                        <div class="food-details">
+                            <span class="price">260 ₽</span>
+                            <span class="weight">500 гр</span>
+                        </div>
+                        <button class="food-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <img src="images/food-ex1.png" alt="Куриные крылья под соусом Терияки">
+                    <h4>Куриные крылья под соусом Терияки</h4>
+                    <p>Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                    <div class="food-price">
+                        <div class="food-details">
+                            <span class="price">260 ₽</span>
+                            <span class="weight">500 гр</span>
+                        </div>
+                        <button class="food-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <img src="images/food-ex1.png" alt="Куриные крылья под соусом Терияки">
+                    <h4>Куриные крылья под соусом Терияки</h4>
+                    <p>Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                    <div class="food-price">
+                        <div class="food-details">
+                            <span class="price">260 ₽</span>
+                            <span class="weight">500 гр</span>
+                        </div>
+                        <button class="food-cart">В корзину</button>
+                    </div>
+                </div> 
+                <div class="food-item hidden">
+                    <img src="images/food-ex1.png" alt="Куриные крылья под соусом Терияки">
+                    <h4>Куриные крылья под соусом Терияки</h4>
+                    <p>Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                    <div class="food-price">
+                        <div class="food-details">
+                            <span class="price">260 ₽</span>
+                            <span class="weight">500 гр</span>
+                        </div>
+                        <button class="food-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="food-item hidden">
+                    <img src="images/food-ex1.png" alt="Куриные крылья под соусом Терияки">
+                    <h4>Куриные крылья под соусом Терияки</h4>
+                    <p>Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                    <div class="food-price">
+                        <div class="food-details">
+                            <span class="price">260 ₽</span>
+                            <span class="weight">500 гр</span>
+                        </div>
+                        <button class="food-cart">В корзину</button>
+                    </div>
+                </div> 
+            </div>
+            <div class="food-examples hidden" data-content="sakni"> 
+                <div class="food-item">
+                    <img src="images/food-ex1.png" alt="Куриные крылья под соусом Терияки">
+                    <h4>Овощи под соусом Терияки</h4>
+                    <p>Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                    <div class="food-price">
+                        <div class="food-details">
+                            <span class="price">260 ₽</span>
+                            <span class="weight">500 гр</span>
+                        </div>
+                        <button class="food-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <img src="images/food-ex1.png" alt="Куриные крылья под соусом Терияки">
+                    <h4>Овощи под соусом Терияки</h4>
+                    <p>Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                    <div class="food-price">
+                        <div class="food-details">
+                            <span class="price">260 ₽</span>
+                            <span class="weight">500 гр</span>
+                        </div>
+                        <button class="food-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <img src="images/food-ex1.png" alt="Куриные крылья под соусом Терияки">
+                    <h4>Овощи под соусом Терияки</h4>
+                    <p>Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                    <div class="food-price">
+                        <div class="food-details">
+                            <span class="price">260 ₽</span>
+                            <span class="weight">500 гр</span>
+                        </div>
+                        <button class="food-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <img src="images/food-ex1.png" alt="Куриные крылья под соусом Терияки">
+                    <h4>Овощи под соусом Терияки</h4>
+                    <p>Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                    <div class="food-price">
+                        <div class="food-details">
+                            <span class="price">260 ₽</span>
+                            <span class="weight">500 гр</span>
+                        </div>
+                        <button class="food-cart">В корзину</button>
+                    </div>
+                </div> 
+            </div>
+            <div class="food-examples hidden" data-content="meat"> 
+                <div class="food-item">
+                    <img src="images/food-ex1.png" alt="Куриные крылья под соусом Терияки">
+                    <h4>Свинина под соусом Терияки</h4>
+                    <p>Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                    <div class="food-price">
+                        <div class="food-details">
+                            <span class="price">260 ₽</span>
+                            <span class="weight">500 гр</span>
+                        </div>
+                        <button class="food-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <img src="images/food-ex1.png" alt="Куриные крылья под соусом Терияки">
+                    <h4>Свинина под соусом Терияки</h4>
+                    <p>Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                    <div class="food-price">
+                        <div class="food-details">
+                            <span class="price">260 ₽</span>
+                            <span class="weight">500 гр</span>
+                        </div>
+                        <button class="food-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <img src="images/food-ex1.png" alt="Куриные крылья под соусом Терияки">
+                    <h4>Свинина под соусом Терияки</h4>
+                    <p>Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                    <div class="food-price">
+                        <div class="food-details">
+                            <span class="price">260 ₽</span>
+                            <span class="weight">500 гр</span>
+                        </div>
+                        <button class="food-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <img src="images/food-ex1.png" alt="Куриные крылья под соусом Терияки">
+                    <h4>Свинина под соусом Терияки</h4>
+                    <p>Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                    <div class="food-price">
+                        <div class="food-details">
+                            <span class="price">260 ₽</span>
+                            <span class="weight">500 гр</span>
+                        </div>
+                        <button class="food-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="food-item hidden">
+                    <img src="images/food-ex1.png" alt="Куриные крылья под соусом Терияки">
+                    <h4>Свинина под соусом Терияки</h4>
+                    <p>Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                    <div class="food-price">
+                        <div class="food-details">
+                            <span class="price">260 ₽</span>
+                            <span class="weight">500 гр</span>
+                        </div>
+                        <button class="food-cart">В корзину</button>
+                    </div> 
+                </div>                 
+            </div> 
+            <button type="button" class="moreFood">Больше блюд</button>
+        </div>
+    </section> 
+    <section class="benefits">
+        <h2>Наши преимущества</h2>
+        <div class="benefits-items">
+            <div class="benefits-card"> 
+                <svg width="60" height="58" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="images/ben_icons.svg#card1"></use>
+                </svg>  
+                <h5>Какой путь проходит ваша еда</h5>
+                <p>Вы делаете заказ на коробку с недельным запасом полуфабрикатов и готовых блюд для всей семьи</p>
+            </div>
+            <div class="benefits-card">
+                <svg width="58" height="59" xmlns="http://www.w3.org/2000/svg"> 
+                   <use xlink:href="images/ben_icons.svg#card2"></use>
+                </svg>
+                <h5>Как происходит производство</h5>
+                <p>За день до доставки мы сами готовим блюда из натуральных продуктов без консервантов, красителей и гмо</p>
+            </div>
+            <div class="benefits-card"> 
+                <svg width="60" height="56" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="images/ben_icons.svg#card3"></use>
+                </svg>
+                <h5>Высокие стандарты качества</h5>
+                <p>Наши повара с многолетним опытом с любовью готовят каждую порцию блюда</p>
+            </div>
+            <div class="benefits-card"> 
+                <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="images/ben_icons.svg#card4"></use>
+                </svg>
+                <h5>Быстрая и качественная доставка</h5>
+                <p>Сами доставим всё прямов в вашу морозилку, сохранив температурный режим и качество наших блюд</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-info">
+            <div class="logo">
+                <img src="images/logo.png" alt="Логотип">
+                <span>индекс еда</span>
+            </div>
+            <ul>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Напишите нам</a></li>
+            </ul>
+        </div>  
+        <div class="social">
+            <img src="images/telegram.png" alt="Телеграм">
+            <img src="images/vk.png" alt="ВКонтакте">
+            <img src="images/instagram.png" alt="Инста">
+        </div>
+    </footer>
+    <section class="product-page">
+        <div class="page-content"> 
+            <header>
+                <div class="logo">
+                    <img src="images/logo.png" alt="Логотип">
+                    <span>индекс еда</span>
+                </div>
+                <div class="header-form">
+                    <input class="search" type="text" placeholder="Блюда" >
+                    <button class="enter">Войти</button>
+                </div>
+                <button class="search-mobile"></button>
+                <button class="cartIcon">
+                    <div class="cartIndex">12</div>
+                </button>
+            </header>
+            <div class="back"><a href="#" class="back-link">Назад</a></div> 
+            <div class="product-card">                       
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/food-ex1.png" alt="Соленые огурчики">
+                    </div>
+                    <div class="product-about">
+                        <div class="rating">
+                            <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="images/star.svg#star" class="activeStar"></use>
+                            </svg> 
+                            <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="images/star.svg#star" class="activeStar"></use>
+                            </svg>
+                            <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="images/star.svg#star" class="activeStar"></use>
+                            </svg>
+                            <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="images/star.svg#star" class="activeStar"></use>
+                            </svg>
+                            <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="images/star.svg#star"class="deactiveStar"></use>
+                            </svg> 
+                        </div>
+                        <h2>Огурчики малосольные</h2>
+                        <span class="price">95 ₽</span>
+                        <span class="weight">500 гр</span>
+                        <div class="product-info"> 
+                            <nav>            
+                                <ul>
+                                    <li class="product-tab-active"><a href="#" class="active" data-heading="desc">Описание</a></li>
+                                    <li><a href="#" data-heading="feedback">Отзывы</a></li>
+                                </ul>              
+                            </nav>
+                            <div class="description" data-content="desc">
+                                Соус Терияки придумали повара из Японии. По традиции его используют в качестве маринада для блюд из курицы, мясо которых приобретает необыкновенный вкус, цвет и аромат.
+                            </div>
+                            <div class="description hidden" data-content="feedback">
+                                Здесь текст отзыва.
+                            </div>                         
+                        </div> 
+                    </div>
+                </div> 
+                <div class="order">
+                    <button type="button" class="slider-btn">Добавить в корзину</button>
+                    <p class="score">За заказ этого блюда вы получите 1 балл.</p>
+                    <p>Чтобы использовать специальные предложения и участвовать в <a href="#" class="active">программе лояльности</a>, войдите в личный кабинет.</p>
+                </div> 
+            </div>
+            <footer>
+                <div class="footer-info">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Логотип">
+                        <span>индекс еда</span>
+                    </div>
+                    <ul>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Напишите нам</a></li>
+                    </ul>
+                </div>  
+                <div class="social">
+                    <img src="images/telegram.png" alt="Телеграм">
+                    <img src="images/vk.png" alt="ВКонтакте">
+                    <img src="images/instagram.png" alt="Инста">
+                </div>
+            </footer>
+        </div>
+    </section>      
+</body>
+</html>
