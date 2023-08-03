@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICE</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto:wght@700&family=Seymour+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="scripts/burger.js" defer></script>
+  <script src="scripts/reviews-slider.js" defer></script>
+  <script src="scripts/modal.js" defer></script>
+</head>
+
+<body class="page">
+  <header class="page__header header">
+    <a class="header__logo logo" href="#">
+      <img class="logo__img" src="images/logo.svg" alt="Logotype" width="41" height="37">
+    </a>
+    <nav class="header__navigation navigation">
+      <button class="navigation__burger-btn navigation__burger-btn--nojs" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="visually-hidden">Open navigation</span>
+      </button>
+
+      <ul class="navigation__list navigation__list--nojs main-nav">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Home</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#how">How it’s made?</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#products">Our products</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#contact">Contact</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="navigation__btn button" href="#buynow">
+            Buy now
+            <svg class="button__svg" height="7" width="10">
+              <use xlink:href="images/sprites.svg#arrow"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <a class="navigation__btn navigation__btn--outnav button" href="#buynow">
+      Buy now
+      <svg class="button__svg" height="7" width="10">
+        <use xlink:href="images/sprites.svg#arrow"></use>
+      </svg>
+    </a>
+  </header>
+
+  <main class="page__main">
+    <section class="hero">
+      <div class="hero__title-group">
+        <h1 class="hero__title">ice cream made with <span>passion</span></h1>
+        <a href="#products" class="hero__btn secondary-btn secondary-btn--small">Products</a>
+        <a href="#how" class="hero__link">How it’s made?</a>
+      </div>
+
+      <div class="hero__descr-group">
+        <picture>
+          <source media="(min-width: 1201px)" srcset="images/lot-of-icecream-desktop.png 1x, images/lot-of-icecream-desktop@2x.png 2x" width="225" height="225">
+          <img class="hero__descr-img" src="images/lot-of-icecream-tablet.png" srcset="lot-of-icecream-tablet@2x.png 2x" alt="Lots of ice-cream" width="152" height="152">
+        </picture>
+        <p class="hero__descr-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et
+          <svg class="hero__arrow" width="41" height="16">
+            <use xlink:href="images/sprites.svg#arrowProduct"></use>
+          </svg>
+        </p>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__img-wrapper">
+          <picture>
+            <source media="(min-width: 1201px)"
+              srcset="images/hero-image-desktop.png 1x, images/hero-image-desktop@2x.png 2x" width="642" height="764">
+            <source media="(min-width: 768px)"
+              srcset="images/hero-image-tablet.png 1x, images/hero-image-tablet@2x.png 2x" width="379" height="454">
+            <img class="hero__img" src="images/hero-image-mobile.png" srcset="images/hero-image-mobile@2x.png 2x"
+              alt="Nice ice-cream" width="276" height="326">
+          </picture>
+        </div>
+        <dl class="hero__facts">
+          <dt class="hero__facts-digit">16</dt>
+          <dd class="hero__facts-text">cafes</dd>
+          <dt class="hero__facts-digit">23</dt>
+          <dd class="hero__facts-text">food trucks</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <h2 class="products__title"><span>100% natural</span> products</h2>
+      <ul class="products__list products-list">
+        <li class="products-list__item">
+          <div class="products-list__img medalion medalion--icecream">
+            <picture class="medalion__img">
+              <source media="(min-width: 1201px" srcset="images/products/ice-cream-desktop.jpg 1x, images/products/ice-cream-desktop@2x.jpg 2x" width="302" height="302">
+              <img src="images/products/ice-cream.png" srcset="images/products/ice-cream@2x.png 2x" alt="Ice cream"
+                width="200" height="200">
+            </picture>
+          </div>
+          <a class="products-list__link card card--icecream" href="#icecream">
+            <div class="card__text-wrapper">
+              <h3 class="card__title">ice cream</h3>
+              <p class="card__descr">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural
+                stabilizer</p>
+            </div>
+            <svg class="card__arrow" width="41" height="16">
+              <use xlink:href="images/sprites.svg#arrowProduct"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="products-list__item">
+          <div class="products-list__img medalion medalion--icecoffee">
+            <picture class="medalion__img">
+              <source media="(min-width: 1201px" srcset="images/products/ice-coffee-desktop.jpg 1x, images/products/ice-coffee-desktop@2x.jpg 2x" width="302" height="302">
+              <img src="images/products/ice-coffee.png" srcset="images/products/ice-coffee@2x.png 2x" alt="Ice coffee"
+                width="200" height="200">
+            </picture>
+          </div>
+          <a class="products-list__link card card--icecoffee" href="#icecream">
+            <div class="card__text-wrapper">
+              <h3 class="card__title">ice coffee</h3>
+              <p class="card__descr">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers </p>
+            </div>
+            <svg class="card__arrow" width="41" height="16">
+              <use xlink:href="images/sprites.svg#arrowProduct"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="products-list__item">
+          <div class="products-list__img medalion medalion--milkshakes">
+            <picture class="medalion__img">
+              <source media="(min-width: 1201px" srcset="images/products/milkshakes-desktop.jpg 1x, images/products/milkshakes-desktop@2x.jpg 2x" width="302" height="302">
+              <img src="images/products/milkshakes.png" srcset="images/products/milkshakes@2x.png 2x" alt="Milkshakes"
+                width="200" height="200">
+            </picture>
+          </div>
+          <a class="products-list__link card card--milkshakes" href="#icecream">
+            <div class="card__text-wrapper">
+              <h3 class="card__title">milkshakes</h3>
+              <p class="card__descr">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries
+                and other sweets of your choice</p>
+            </div>
+            <svg class="card__arrow" width="41" height="16">
+              <use xlink:href="images/sprites.svg#arrowProduct"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="how" id="how">
+      <p class="how_subtitle">tradition and love</p>
+      <h2 class="how__title">how it’s made?</h2>
+      <div class="how__columns">
+        <div class="how__img-wrapper medalion medalion--top">
+          <picture class="medalion__img">
+            <source media="(min-width: 1201px)" srcset="images/cow-desktop.jpg 1x,images/cow-desktop@2x.jpg 2x" width="490" height="490">
+            <img src="images/cow.png" srcset="images/cow@2x.png 2x" alt="Ice cream" width="278" height="278">
+          </picture>
+        </div>
+        <div class="how__text-wrapper">
+          <p class="how__text">Ice is a place where you will become not only a little happier, but also healthier.
+            Health
+            is the main value for us, and we follow it when creating our handmade desserts. </p>
+          <p class="how__text">We use traditional recipes and 100% natural ingredients. Our products are so natural that
+            they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream,
+            15
+            types of coffee and 23 milkshakes.
+          </p>
+          <p class="how__text how__text--not-mobile">This is enough to choose ice cream and
+            coffee for any mood!</p>
+          <a class="how__more-link button" href="#readmore">
+            Read more
+            <svg class="button__svg" height="7" width="10">
+              <use xlink:href="images/sprites.svg#arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <ul class="how__list facts">
+        <li class="facts__item facts__item--cow">
+          <span class="facts__digit">721</span>
+          <span class="facts__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</span>
+        </li>
+        <li class="facts__item facts__item--kg">
+          <span class="facts__digit">16kg</span>
+          <span class="facts__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</span>
+        </li>
+        <li class="facts__item facts__item--kinds">
+          <span class="facts__digit">84</span>
+          <span class="facts__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="for-clients">
+      <h2 class="for-clients__title visually-hidden">Reviews</h2>
+      <header class="for-clients__header">
+        <picture>
+          <source media="(min-width: 1121px)"
+            srcset="images/review-header-desktop.jpg 1x, images/review-header-desktop@2x.jpg 2x" width="1013" height="422">
+          <source media="(min-width: 768px)"
+            srcset="images/review-header-tablet.jpg 1x, images/review-header-tablet@2x.jpg 2x" width="704" height="327">
+          <img class="for-clients__img" src="images/review-header.jpg" srcset="images/review-header@2x.jpg 2x"
+            alt="Our ice-cream" width="279" height="130">
+        </picture>
+      </header>
+      <div class="for-clients__slider feedbacks-slider">
+        <ul class="feedbacks-slider__clients-list">
+          <li class="feedbacks-slider__item">
+            <blockquote class="feedback">
+              <picture>
+                <img class="feedback__img" src="images/clients/client1.jpg" srcset="images/clients/client1@2x.jpg 2x"
+                  alt="Emily" width="85" height="85">
+              </picture>
+              <p class="feedback__text">I love visiting your cafe. You prepare the most delicious ice cream in Los
+                Angeles! In addition, you have beautiful serving, cozy atmosphere and polite staff.</p>
+              <cite class="feedback__author">Emily, Los Angeles</cite>
+            </blockquote>
+          </li>
+          <li class="feedbacks-slider__item feedbacks-slider__item--hidden">
+            <blockquote class="feedback">
+              <picture>
+                <img class="feedback__img" src="images/clients/client2.jpg" srcset="images/clients/client2@2x.jpg 2x"
+                  alt="Bryan" width="85" height="85">
+              </picture>
+              <p class="feedback__text">Every day we come to you with friends after classes in college. We love your ice
+                cream and casual atmosphere! </p>
+              <cite class="feedback__author">Bryan, New-York</cite>
+            </blockquote>
+          </li>
+          <li class="feedbacks-slider__item feedbacks-slider__item--hidden">
+            <blockquote class="feedback">
+              <picture>
+                <img class="feedback__img" src="images/clients/client3.jpg" srcset="images/clients/client3@2x.jpg 2x"
+                  alt="Diana" width="85" height="85">
+              </picture>
+              <p class="feedback__text">Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really
+                like the excellent service - always served politely and quickly! </p>
+              <cite class="feedback__author">Diana, Chicago</cite>
+            </blockquote>
+          </li>
+          <li class="feedbacks-slider__item feedbacks-slider__item--hidden">
+            <blockquote class="feedback">
+              <picture>
+                <img class="feedback__img" src="images/clients/client4.jpg" srcset="images/clients/client4@2x.jpg 2x"
+                  alt="Sam" width="85" height="85">
+              </picture>
+              <p class="feedback__text">I love eating popsicles on a hot day. Yours is always delicious. I recommend your cafe to everyone I know. </p>
+              <cite class="feedback__author">Sam, Los Angeles</cite>
+            </blockquote>
+          </li>
+        </ul>
+
+        <ul class="feedbacks-slider__pagination slider-pagination">
+          <!-- <li class="slider-pagination__item">
+            <button class="slider-pagination__button slider-btn slider-btn--current" type="button">
+              <span class="visually-hidden">Feedback # 1</span>
+            </button>
+          </li>
+          <li class="slider-pagination__item">
+            <button class="slider-pagination__button slider-btn" type="button">
+              <span class="visually-hidden">Feedback # 2</span>
+            </button>
+          </li>
+          <li class="slider-pagination__item">
+            <button class="slider-pagination__button slider-btn" type="button">
+              <span class="visually-hidden">Feedback # 3</span>
+            </button>
+          </li>
+          <li class="slider-pagination__item">
+            <button class="slider-pagination__button slider-btn" type="button">
+              <span class="visually-hidden">Feedback # 4</span>
+            </button>
+          </li> -->
+        </ul>
+      </div>
+
+      <h2 class="for-clients__title visually-hidden" id="contact">Contacts</h2>
+      <ul class="for-clients__contacts">
+        <li class="for-clients__location cafe-card">
+          <p class="cafe-card__type">cafe</p>
+          <address class="cafe-card__post-address address">
+            <span class="address__town">Chicago</span>
+            <a class="address__street" href="#">10340 Ridgeland Ave, <br>Chicago Ridge, IL 60415, USA</a>
+          </address>
+          <dl class="cafe-card__worktime worktime">
+            <dt class="worktime__weekdays">Monday - Friday</dt>
+            <dd class="worktime__hours">06:00 AM - 10:00 PM</dd>
+            <dt class="worktime__weekdays">Saturday - Sunday</dt>
+            <dd class="worktime__hours">08:00 AM - 16:00 PM</dd>
+          </dl>
+          <address class="cafe-card__contacts contacts">
+            <a class="contacts__tel" href="tel:+610383766284">+61(0) 383 766 284</a>
+            <a class="contacts__mail" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </address>
+        </li>
+
+        <li class="for-clients__location cafe-card">
+          <p class="cafe-card__type">foodtruck</p>
+          <address class="cafe-card__post-address address">
+            <span class="address__town">Los Angeles</span>
+            <a class="address__street" href="#">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a>
+          </address>
+          <dl class="cafe-card__worktime worktime">
+            <dt class="worktime__weekdays">Monday - Friday</dt>
+            <dd class="worktime__hours">06:00 AM - 10:00 PM</dd>
+            <dt class="worktime__weekdays">Saturday - Sunday</dt>
+            <dd class="worktime__hours">08:00 AM - 16:00 PM</dd>
+          </dl>
+          <address class="cafe-card__contacts contacts">
+            <a class="contacts__tel" href="tel:+610383766284">+61(0) 383 766 284</a>
+            <a class="contacts__mail" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </address>
+        </li>
+
+        <li class="for-clients__location cafe-card">
+          <p class="cafe-card__type">cafe</p>
+          <address class="cafe-card__post-address address">
+            <span class="address__town">New York</span>
+            <a class="address__street" href="#">726 Sterling Pl, Brooklyn, <br>NY 11222, USA</a>
+          </address>
+          <dl class="cafe-card__worktime worktime">
+            <dt class="worktime__weekdays">Monday - Friday</dt>
+            <dd class="worktime__hours">06:00 AM - 10:00 PM</dd>
+            <dt class="worktime__weekdays">Saturday - Sunday</dt>
+            <dd class="worktime__hours">08:00 AM - 16:00 PM</dd>
+          </dl>
+          <address class="cafe-card__contacts contacts">
+            <a class="contacts__tel" href="tel:+610383766284">+61(0) 383 766 284</a>
+            <a class="contacts__mail" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </address>
+        </li>
+      </ul>
+      <div class="for-clients__btn-wrapper">
+        <a class="for-clients__button button" href="#locations">
+          Our Locations
+          <svg class="button__svg" height="7" width="10">
+            <use xlink:href="images/sprites.svg#arrow"></use>
+          </svg>
+        </a>
+        <a class="for-clients__button secondary-btn" href="#franchise">
+          Franchise
+          <svg class="secondary-btn__svg" height="7" width="10">
+            <use xlink:href="images/sprites.svg#arrow"></use>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__first-row">
+    <p class="footer__title">homemade ice cream made <span>with passion</span></p>
+    <ul class="footer__social social">
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Our Github</span>
+          <svg class="social__icon" width="20" height="20" focusable="false" aria-hidden="true">
+            <use xlink:href="images/sprites.svg#github"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Our Telegram</span>
+          <svg class="social__icon" width="20" height="16" focusable="false" aria-hidden="true">
+            <use xlink:href="images/sprites.svg#telegram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Our Facebook</span>
+          <svg class="social__icon" width="9" height="20" focusable="false" aria-hidden="true">
+            <use xlink:href="images/sprites.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <p class="footer__contacts">Feel free to contact
+      <a class="footer__tel" href="tel:+610383766284">+61 (0) 383 766 284</a>
+    </p>
+    </div>
+    <p class="footer__copyright">&copy; 2022 - IceCream.
+      <span>All Rights Reserved.</span> </p>
+  </footer>
+
+  <!-- modal #buynow -->
+  <div class="popup popup--nojs" id="buynow">
+    <div class="popup__modal">
+      <h2 class="popup__title">Buy now</h2>
+      <button class="popup__close close-modal" type="button">
+        <span class="visually-hidden">Close modal window</span>
+        <svg class="close-svg" width="12" height="12" focusable="false" aria-hidden="true">
+          <use xlink:href="images/sprites.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="popup__order-list order-list">
+        <li class="order-list__item order-card order-card--icecream">
+          <div class="order-card__img-wrapper medalion medalion--icecream">
+            <picture class="medalion__img">
+              <img src="images/products/ice-cream.png" srcset="images/products/ice-cream@2x.png 2x" alt="Ice cream"
+                width="132" height="132">
+            </picture>
+          </div>
+          <h3 class="order-card__title">ice cream</h3>
+        </li>
+        <li class="order-list__item order-card order-card--icecoffee">
+          <div class="order-card__img-wrapper medalion medalion--icecoffee">
+            <picture class="medalion__img">
+              <img src="images/products/ice-coffee.png" srcset="images/products/ice-coffee@2x.png 2x" alt="Ice coffee"
+                width="132" height="132">
+            </picture>
+          </div>
+          <h3 class="order-card__title">ice coffee</h3>
+        </li>
+        <li class="order-list__item order-card order-card--milkshakes">
+          <div class="order-card__img-wrapper medalion medalion--milkshakes">
+            <picture class="medalion__img">
+              <img src="images/products/milkshakes.png" srcset="images/products/milkshakes@2x.png 2x" alt="Milkshakes"
+                width="132" height="132">
+            </picture>
+          </div>
+          <h3 class="order-card__title">milkshakes</h3>
+        </li>
+      </ul>
+
+      <form action="#" method="post" class="popup__form form">
+        <label for="name" class="visually-hidden">Your name</label>
+        <input class="form__field" type="text" name="name" id="name" placeholder="Name">
+        <label for="phone" class="visually-hidden">Your phone</label>
+        <input class="form__field" type="text" name="phone" id="phone" placeholder="Phone" required>
+        <label for="comment" class="visually-hidden">Your comment</label>
+        <textarea class="form__field form__field--area" name="comment" id="comment" placeholder="Comment"></textarea>
+        <button class="popup__btn button" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- modal #icecream -->
+  <div class="popup popup--nojs" id="icecream">
+    <div class="popup__modal popup__modal--ingredients">
+      <h2 class="popup__title popup__title--mb24 popup__title--ingredients">Chololate icecream</h2>
+      <button class="popup__close popup__close--ingredients close-modal close-modal--ingredients" type="button">
+        <span class="visually-hidden">Close modal window</span>
+        <svg class="close-svg" width="12" height="12" focusable="false" aria-hidden="true">
+          <use xlink:href="images/sprites.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__medalion medalion medalion--icecream">
+        <picture class="medalion__img">
+          <img src="images/products/chocolate-icecream.jpg" srcset="images/products/chocolate-icecream@2x.jpg 2x"
+            alt="Chololate ice-cream" width="131" height="131">
+        </picture>
+      </div>
+
+      <dl class="popup__food-values food-values">
+        <div class="food-values__item">
+          <dt class="food-values__digit">320</dt>
+          <dd class="food-values__name">kcal</dd>
+        </div>
+        <div class="food-values__item">
+          <dt class="food-values__digit">4g</dt>
+          <dd class="food-values__name">Prote...</dd>
+        </div>
+        <div class="food-values__item">
+          <dt class="food-values__digit">8,2g</dt>
+          <dd class="food-values__name">Fats</dd>
+        </div>
+        <div class="food-values__item">
+          <dt class="food-values__digit">40,4g</dt>
+          <dd class="food-values__name">Carbs</dd>
+        </div>
+      </dl>
+
+      <h3 class="popup__table-title">Ingredients</h3>
+      <dl class="popup__ingredients-table ingredients">
+        <dt class="ingredients__name">Milk</dt>
+        <dd class="ingredients__value">100ml</dd>
+        <dt class="ingredients__name">Belgian chocolate</dt>
+        <dd class="ingredients__value">20g</dd>
+        <dt class="ingredients__name">Belgian chocolate</dt>
+        <dd class="ingredients__value">150 ml</dd>
+        <dt class="ingredients__name">Cocoa powder</dt>
+        <dd class="ingredients__value">30g</dd>
+        <dt class="ingredients__name">Sugar</dt>
+        <dd class="ingredients__value">40g</dd>
+        <dt class="ingredients__name">Vanilla sugar</dt>
+        <dd class="ingredients__value">10g</dd>
+      </dl>
+
+      <form action="#" method="post" class="popup__form form">
+        <label for="name" class="visually-hidden">Your name</label>
+        <input class="form__field" type="text" name="name" id="name" placeholder="Name">
+        <label for="phone" class="visually-hidden">Your phone</label>
+        <input class="form__field" type="text" name="phone" id="phone" placeholder="Phone" required>
+        <label for="comment" class="visually-hidden">Your comment</label>
+        <textarea class="form__field form__field--area" name="comment" id="comment" placeholder="Comment"></textarea>
+        <button class="popup__btn button" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- modal #readmore -->
+  <div class="popup popup--nojs" id="readmore">
+    <div class="popup__modal popup__modal--short-content">
+      <h2 class="popup__title popup__title--mb32">How it’s made?</h2>
+      <div class="popup__video-wrapper">
+        <video class="popup__video" src="#" poster="#" width="224" height="199"></video>
+        <button class="popup__video-play" type="button">
+          <span class="visually-hidden">Play video</span>
+          <svg width="36" height="36" focusable="false" aria-hidden="true">
+            <use xlink:href="images/sprites.svg#play"></use>
+          </svg>
+        </button>
+      </div>
+      <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et</p>
+      <button class="popup__close close-modal" type="button">
+        <span class="visually-hidden">Close modal window</span>
+        <svg class="close-svg" width="12" height="12" focusable="false" aria-hidden="true">
+          <use xlink:href="images/sprites.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- modal #locations -->
+  <div class="popup popup--nojs" id="locations">
+    <div class="popup__modal popup__modal--short-content">
+      <h2 class="popup__title popup__title--mb32">Our Locations</h2>
+      <picture>
+        <source media="(min-width: 768px" srcset="images/map-tablet.jpg 1x, images/map-tablet@2x.jpg 2x" width="448" height="260">
+        <img class="popup__image" src="images/map.jpg" srcset="images/map@2x.jpg 2x" alt="Our location" width="224"
+          height="199">
+      </picture>
+      <a class="popup__btn button" href="#">Open map</a>
+      <button class="popup__close close-modal" type="button">
+        <span class="visually-hidden">Close modal window</span>
+        <svg class="close-svg" width="12" height="12" focusable="false" aria-hidden="true">
+          <use xlink:href="images/sprites.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- modal #franchise -->
+  <div class="popup popup--nojs" id="franchise">
+    <div class="popup__modal">
+      <h2 class="popup__title popup__title--mb24">Thank you for your interest in owning an Ice Cream shop</h2>
+      <p class="popup__text">Due to the overwhelming volume of franchise requests we are not accepting new franchisee
+        applications at this time. Once the application process resumes, we will contact you for further information.
+        Please fill out the contact information below and we will reach out for additional information. We appreciate
+        your patience.</p>
+      <button class="popup__close close-modal" type="button">
+        <span class="visually-hidden">Close modal window</span>
+        <svg class="close-svg" width="12" height="12" focusable="false" aria-hidden="true">
+          <use xlink:href="images/sprites.svg#close"></use>
+        </svg>
+      </button>
+
+      <form action="#" method="post" class="popup__form popup__form--mt32  form">
+        <label for="name" class="visually-hidden">Your name</label>
+        <input class="form__field" type="text" name="name" id="name" placeholder="Name">
+        <label for="phone" class="visually-hidden">Your phone</label>
+        <input class="form__field" type="text" name="phone" id="phone" placeholder="Phone" required>
+        <label for="email" class="visually-hidden">Your e-mail</label>
+        <input class="form__field" type="email" name="email" id="email" placeholder="Email" required>
+        <label for="comment" class="visually-hidden">Your comment</label>
+        <textarea class="form__field form__field--area" name="comment" id="comment" placeholder="Comment"></textarea>
+        <button class="popup__btn button" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
