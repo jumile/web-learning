@@ -11,11 +11,11 @@
     <link href="css/wyfly_styles.css" rel="stylesheet" >
     <link href="css/wyfly_calendar.css" rel="stylesheet" >
 
-    <script src="../scripts/html5shiv.js"></script>
-    <script src="../scripts/handlers.js"></script>
+    <script src="scripts/html5shiv.js"></script>
     <script src="scripts/wyfly_scripts.js" defer></script> 
     <script src="scripts/calendar.js" defer></script>   
   </head>
+
 <body>
   <div class="wrapper">
     <div class="top">
@@ -57,7 +57,8 @@
                 <option value="stockholm">Stockholm</option>
               </select>
             </div>
-          </div> 
+          </div> <!-- /.destination -->
+
           <div class="params">
             <div class="flight right_border">
               <label>
@@ -79,7 +80,8 @@
                 <span></span>Business class
               </label>
             </div>
-          </div> 
+          </div>  <!-- /.params -->                
+
           <div class="params2">
             <div class="dates right_border">
               <div class="dateFrom">
@@ -238,7 +240,8 @@
                   </tbody>
                 </table>  
               </div>
-            </div>                         
+            </div>   <!-- /.dates -->
+                        
             <div class="counters left_border">
               <div class="persons">
                 <div class="adults">
@@ -249,7 +252,8 @@
                   <img src="img/adult.png" width="18" height="49" alt="5">
                   <img src="img/adult.png" width="18" height="49" alt="6">
                   <img src="img/adult.png" width="18" height="49" alt="7">
-                </div>               
+                </div> <!-- /.adults -->
+              
                 <div class="childs">
                   <div class="children right_border">
                     children 2-12
@@ -269,8 +273,9 @@
                       <li><a href="#">3</a></li>
                     </ul>
                   </div>
-                </div> 
-              </div>               
+                </div> <!-- /.childs-->
+              </div> <!-- /.persons -->
+              
               <div class="total">
                 <label>
                   <input type="text" name="totalAdult" id="totalAdult" value="1">
@@ -285,12 +290,15 @@
                   babies
                 </label>
               </div>              
-            </div> 
-          </div> 
+            </div> <!-- /.counters-->
+          </div><!-- /.params2 -->       
+
           <input type="button" name="search" id="search" value="Search">
         </form>
-      </div> 
-    </div> 
+
+      </div> <!-- /.info -->
+    </div> <!--end of top-->
+
     <div class="content">
       <figure>
         <img src="img/fig1.jpg" alt="изображение">
@@ -314,7 +322,8 @@
           <input type="submit" name="subscribeButton" value="subscribe">
         </form>
       </div>
-    </div> 
+    </div> <!--end of content-->
+    
     <footer class="footer">      
       <ul class="digits">
         <li><span class="datas">157'299</span> flights booked </li>
@@ -350,8 +359,8 @@
           <li><a href="#">FAQ</a></li>
           <li><a href="#">Contact us</a></li>
         </ul>  
-      </div>          
+      </div> <!-- /.info -->         
     </footer>
-  </div> 
+  </div> <!--end of wrapper-->
 </body>
 </html>

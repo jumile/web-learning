@@ -1,43 +1,59 @@
+/*смена городов туда-обратно*/
 let fromCity = document.getElementById('from'); 
 let toCity = document.getElementById('to');
 const switchCity = document.querySelector('.switch');
+
+switchCity.addEventListener('click', () => {
+	let x = fromCity.value;
+	fromCity.value = toCity.value;
+	toCity.value = x;	
+});
+
+/*скрытие календаря "Обратно"*/
 const singleFlight = document.querySelector('input[value="single"]');
 const returnFlight = document.querySelector('input[value="return"]');
 const returnCalendar = document.querySelector('.dateBack');
+
+singleFlight.addEventListener('click', () => {
+	returnCalendar.style.visibility='hidden';
+});
+returnFlight.addEventListener('click', () => {
+	returnCalendar.style.visibility='visible';
+});
+
+
+
+/*работа счетчиков */
 const adults = document.querySelectorAll('.adults img');
 const children = document.querySelectorAll('.children a');
 const babies = document.querySelectorAll('.babies a');
 const totalAdult = document.getElementById('totalAdult');
 const totalChilds = document.getElementById('totalChilds');
 const totalBabies = document.getElementById('totalBabies');
-addHandler(switchCity, 'click', () => {
-	let x = fromCity.value;
-	fromCity.value = toCity.value;
-	toCity.value = x;	
-});
-addHandler(singleFlight, 'click', () => {
-	returnCalendar.style.visibility='hidden';
-});
-addHandler(returnFlight, 'click', () => {
-	returnCalendar.style.visibility='visible';
-});
+
+//добавление щелчка на человечков
 adults.forEach((adult, index) => {
-	addHandler(adult, 'click', () => {			
+	adult.addEventListener('click', () => {			
 		counterAdult(index);		
-	})	
+	});
 });
+//добавление щелчка на цифры и отмена станд. поведения у ссылок у детей
 children.forEach((child, index) => {
-	addHandler(child, 'click', (e) => {
-		cancelReaction(e);
+	child.addEventListener('click', (e) => {
+		e.preventDefault();
 		counterChildren(index);		
 	})	
 });
 babies.forEach((baby, index) => {
-	addHandler(baby, 'click', (e) => {		
-		cancelReaction(e);
+	baby.addEventListener('click', (e) => {		
+		e.preventDefault();
 		counterBabies(index);		
 	})	
 });
+
+/* изменение цвета человечка и запись значения в поле со счетчиком
+	id - индекс человечка, по к-ому щелкнули; приходит в момент щелчка
+*/
 function counterAdult(id) {
 	adults.forEach((adult, index) => {
 		if(id >= index) adult.src = 'img/adult_select.png';
@@ -45,6 +61,7 @@ function counterAdult(id) {
 	})
 	totalAdult.value = id+1;
 }
+// подсветка цифр у детей и передача значения в счетчики
 function counterChildren(id) {
 	children.forEach((child, index) => {
 		if(id === index) child.classList.add('active');
