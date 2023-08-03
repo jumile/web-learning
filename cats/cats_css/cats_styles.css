@@ -35,6 +35,7 @@ nav ul li a {
     color: #1A212F;
     text-decoration: none;
 }
+/*кнопки*/
 .button {
     text-decoration: none; 
     -webkit-border-radius: 25px;
@@ -78,6 +79,8 @@ nav ul li a {
     font-size: 1.25rem;
     margin: 0;
 }
+
+/*why*/
 .why {
     padding-top: 140px;
     background: url(../img/paw_big.png) no-repeat right top;
@@ -110,6 +113,8 @@ nav ul li a {
     font-size: 1rem;
     line-height: 140%; 
 }
+
+/*numuri*/
 .numuri {
     margin-top: 140px;
     background: url(../img/fish.png) no-repeat left top;
@@ -189,6 +194,8 @@ button.owl-prev span, button.owl-next span {
     right: 5%;
     bottom: 0;
 }
+
+/*atsauk*/
 .atsauk {
     padding-top: 140px;
     background: url(../img/paw_big2.png) no-repeat right top;
@@ -213,6 +220,7 @@ button.owl-prev span, button.owl-next span {
 }
 .atsauk .item p:first-child {
      display: flex;
+
 }
 .atsauk .item p:first-child span {
     font-family: Lato, sans-serif;
@@ -247,6 +255,8 @@ button.owl-prev span, button.owl-next span {
     -webkit-box-shadow: 0px 2px 12px rgb(224, 224, 224);    
     box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.25);    
 }
+
+/*contacts*/
 .contacts {
     margin-top: 140px;
     display: flex;
@@ -285,6 +295,8 @@ button.owl-prev span, button.owl-next span {
         padding-left: 98px;
     }
 }
+
+/*footer*/
 footer {
     background-color: #fff;
 }
@@ -297,6 +309,8 @@ footer p {
     padding: 20px 198px;
     margin-bottom: 0;
 }
+
+/*catalog*/
 .catalog {
     padding: 70px 5% 140px;   
 }
@@ -309,6 +323,26 @@ h1.screen_name {
     text-align: left;
     margin: 0;
 }
+/*!!!
+.sort {
+    font-size: 14px;
+    line-height: 17px;
+    background: #fff;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    -moz-box-shadow: 0px 2px 12px rgb(253, 253, 253);
+    -webkit-box-shadow: 0px 2px 12px rgb(253, 253, 253);
+    box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18);
+    padding: 12px 30px 13px 30px;
+    display: flex;
+    justify-content: center;
+}
+.sort img {
+    display: inline-block;
+    padding-left: 10px;
+}
+*/
 .filter_button {
     display: none;
 }
@@ -448,6 +482,7 @@ h1.screen_name {
     width: 100%;
     padding-left: 51px;
 }
+/*tooltip*/
 .ui-tooltip, .arrow:after {
     background: #FFFEFD;
     -webkit-box-shadow: 0px 4px 12px rgb(253, 253, 253);
@@ -483,6 +518,8 @@ h1.screen_name {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+/*discount*/
 .discount {
     background-image: url(../img/paw_big6.png), url(../img/discount1.png);
     background-repeat: no-repeat, no-repeat;
@@ -513,6 +550,8 @@ h1.screen_name {
     line-height: 4.125rem;
     font-weight: bold;
 }
+
+/*room*/
 .room-detail {
     background: url(../img/paw_big4.png) no-repeat 105% 0%;
     padding-top: 20px;
@@ -583,6 +622,7 @@ h1.screen_name {
 .room .button-reserve2 {
     margin-top: 30px;
 }
+/*pop-up*/
 .hidden {
     display: none;
 }
@@ -682,6 +722,8 @@ h1.screen_name {
     right: 40px;
     cursor: pointer;
 }
+
+/*thank-popup*/
 .thank-popup {
     width:100%;
     height: 100vh;
@@ -723,6 +765,7 @@ h1.screen_name {
     text-align: left;
     cursor: pointer;
 }
+
 @media (max-width: 768px) and (min-width: 481px) {
     nav {
         background-position:left 45px center;
@@ -748,6 +791,8 @@ h1.screen_name {
     .button-reserve1 {        
         text-align: left;
     }   
+    
+    /*why*/
     .why-items {
         padding-left: 2.1875rem;
         padding-right: 2.1875rem;
@@ -763,6 +808,8 @@ h1.screen_name {
     .why .item p {
         font-size: .9375rem;
     }
+    
+    /*numuri*/
     .numuri {
         margin-top: 7.5rem;
     }
@@ -788,6 +835,8 @@ h1.screen_name {
         font-size: .9375rem;
         margin: 0 0 17px;
     }
+           
+    /*atsauk */
     .atsauk {
         padding: 120px 45px 0 45px;
     }
@@ -795,6 +844,8 @@ h1.screen_name {
         padding: 35px 33px 30px 70px;
         margin: 0 auto;
     }
+    
+    /*contacts*/
     .contacts {
         margin-top: 120px;
     }
@@ -815,9 +866,13 @@ h1.screen_name {
     .contacts .info img {
         padding-right: 18px;
     }
+        
+    /*footer*/
     footer p {
         padding: 20px 45px;
     }
+    
+    /*catalog*/
     .catalog {
         padding: 60px 5% 70px;   
     }
@@ -883,6 +938,8 @@ h1.screen_name {
         top: 15px;
         right: 15px;
     }
+  
+    /*discount*/
     .discount {
         background-position: left top, right top;
         background-size: auto, cover;
@@ -894,6 +951,8 @@ h1.screen_name {
     .discount p {
         font-size: .9375rem;
     }
+    
+    /*room*/
     .room-detail {
         background: none;
     }
@@ -917,6 +976,7 @@ h1.screen_name {
     .room p.bed, .room p.dom, .room p.igra, .room p.kogti, .room p.none {
         margin-top: 20px;
     }
+    /*pop-up*/
     .popup {
         top:136px;
     }
@@ -929,6 +989,7 @@ h1.screen_name {
    .popup-content .screen_name {
        font-size: 1.75rem;
    }      
+    /*thank-popup*/
     .thank-popup-content .screen_name {
         font-size: 1.75rem;   
     }
@@ -981,6 +1042,7 @@ h1.screen_name {
     }
 }
 @media (max-width: 480px) {
+   /*бургерное меню*/
     header nav label, header nav span {
         display: inline;
     }
@@ -1082,6 +1144,7 @@ h1.screen_name {
         transform: rotate(-45deg);
         top: -7px;
     }
+
     .banner {    
         height: 100vh;
         background: url(../img/main2.png) no-repeat right bottom #FDAA52;
@@ -1105,6 +1168,8 @@ h1.screen_name {
             margin: 40px auto;
             text-align: left;
     }    
+    
+    /*why*/
     .why {
         padding-top: 40px;
         background: url(../img/paw_big.png) no-repeat right top 30px;
@@ -1133,6 +1198,8 @@ h1.screen_name {
     .why .item p {
         font-size: .9375rem;
     }
+    
+    /*numuri*/
     .numuri {
         margin-top: 70px;
         background: url(../img/fish.png) no-repeat left top 32px;
@@ -1175,6 +1242,8 @@ h1.screen_name {
     .owl-theme .owl-nav {
         display: none;
     }
+    
+    /*atsauk*/
     .atsauk {
         padding-top: 70px;
         background: url(../img/paw_big2.png) no-repeat right top 30px;
@@ -1196,6 +1265,8 @@ h1.screen_name {
         padding-left: 15px;
         padding-right: 15px;
     }
+    
+    /*contacts*/
     .contacts {
         margin-top: 40px;
         display: block;
@@ -1224,6 +1295,8 @@ h1.screen_name {
         width: 100%;
         height: 300px;
     }
+    
+    /*footer*/
     footer {
         padding-top: 20px;
     }
@@ -1238,6 +1311,8 @@ h1.screen_name {
         display: block;
         margin-bottom: 20px;
     }
+    
+    /*catalog*/
     .catalog {
         padding: 40px 15px 10px;   
     }
@@ -1335,6 +1410,8 @@ h1.screen_name {
         padding-left: 30px;
         width: 206px;
     }
+
+    /*discount*/
     .discount-wrapper {
         padding: 0 15px;
         width: 100%;
@@ -1364,6 +1441,8 @@ h1.screen_name {
         font-size: 2.31rem;
         line-height: 2.75rem;
     }
+    
+    /*room*/
    .room-detail {
         background: none;
         padding: 40px 15px 0;
@@ -1392,6 +1471,7 @@ h1.screen_name {
         margin-top: 24px;
         margin-bottom: 0;
     }
+    /*pop-up*/
     .popup {
         height: 400vh;        
     }
@@ -1436,6 +1516,8 @@ h1.screen_name {
         top: 20px;
         right: 20px;
     }
+    
+    /*thank-popup*/
     .thank-popup {
         height: 300vh;        
         background-color: #FCFBFB;

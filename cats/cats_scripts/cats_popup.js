@@ -2,6 +2,8 @@ let reserve = document.querySelector('.info .button-reserve2');
 let submit = document.querySelector('.popup-content .button-reserve2');
 let popup = document.querySelector('.popup');
 let thankPopup = document.querySelector('.thank-popup');
+
+
 function popUpHide(elem) {
     elem.classList.add('hidden');
 }
@@ -15,6 +17,7 @@ function addHandler(element, ev, fun) {
         element.attachEvent('on'+ev, fun);
     }
 }
+
 addHandler(reserve, 'click', function() {popUpShow(popup)});
 addHandler(popup, 'click', (ev) => {
     let target = ev.target;

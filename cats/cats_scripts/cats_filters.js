@@ -2,16 +2,17 @@ const s = document.querySelectorAll('.square input');
 const cards = document.querySelectorAll('.cards .card');
 s.forEach((item, index) => {
     let card = cards[index];
-    addHandler(item, 'click', function() { filterSquare(this, card) });
+    item.addEventListener('click', function() { filterSquare(this, card) });
 });
 function filterSquare(elem, card) {
     if(!elem.checked) card.style.display='none';
     else card.style.display='block';
 }
+
 const g = document.querySelectorAll('.gadgets input');
 const cardsGadgets = document.querySelectorAll('.cards .info img');
 g.forEach((i) => {
-    addHandler(i, 'click', function() { filterGadgets(this) });
+    i.addEventListener('click', function() { filterGadgets(this) });
 }); 
 function filterGadgets(elem) {     
     const newCardsGadgets=[];     
@@ -28,9 +29,10 @@ function filterGadgets(elem) {
         else card.style.display='block';
     }       
 }
+
 const checkboxes = document.querySelectorAll('.filter input[type="checkbox"]');
 const nonFilter=document.getElementById('non-filter');
-addHandler(nonFilter, 'click', function(e) { cancelReaction(e); filterCancel() });
+nonFilter.addEventListener('click', function(e) { e.preventDefault(); filterCancel() });
 function filterCancel() {
     checkboxes.forEach( (checkbox) => {
         if(!checkbox.checked) {
@@ -41,16 +43,19 @@ function filterCancel() {
         }
     });
 }
+
 const filter = document.querySelector('.filter');
 const filterTablet = document.querySelector('.filter_button');
-addHandler(filterTablet, 'click', function() {popUpFilter(filter)});
+filterTablet.addEventListener('click', function() {popUpFilter(filter)});
 const closeButtonFilter = document.getElementById('close-filter');
-addHandler(closeButtonFilter, 'click', function() {popUpHide(filter)});
+closeButtonFilter.addEventListener('click', function() {popUpHide(filter)});
 const applyFilter = document.getElementById('apply-filter');
-addHandler(applyFilter, 'click', function() {  popUpHide(filter); });
+applyFilter.addEventListener('click', function() {  popUpHide(filter); });
 function popUpFilter(elem) {
     elem.style.display='block';
 }
 function popUpHide(elem) {
     elem.style.display="none";
 }
+
+

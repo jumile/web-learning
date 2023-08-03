@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +10,20 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="cats_css/normalize.css">
     <link rel="stylesheet" href="cats_css/cats_styles.css">
-    <script src="../scripts/html5shiv.js"></script>
-    <script src="../scripts/handlers.js"></script>
-    <script src="../scripts/jquery.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="cats_scripts/html5shiv.js"></script>
+    <script src="owlcarousel/jquery.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="cats_scripts/smoothScroll.js" defer></script>    
     <script src="cats_scripts/mobile_menu.js" defer></script>
     <script src="cats_scripts/cats_filters.js" defer></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=3A5fcf1987867fd91fddf99028a8d45a4e0650920966fd415b0caaf8dcd7697442" type="text/javascript"></script>
     <script src="cats_scripts/icon_customImage.js" defer></script>
     <script src="cats_scripts/cats_catalog_tooltips.js" defer></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -49,6 +52,7 @@
             </ul>
         </nav>
     </header>
+
     <div class="catalog">
         <div class="catalog_header">
             <h1 class="screen_name">Наши номера</h1>
@@ -90,6 +94,7 @@
                             <input type="checkbox" name="gadgets" id="n5" value="Домик" checked>
                             <label for="n5">Домик</label>
                         </div>
+
                         <a href="#" id="apply-filter">Показать</a>
                         <a href="#" id="non-filter">Сбросить фильтр</a>
                     </form>
@@ -168,6 +173,8 @@
             </div>
         </div>
     </div>
+    <!--/.catalog -->
+
     <div class="discount-wrapper">
         <div class="discount">
             <p>Каждый 7-й день <span>бесплатно!</span></p>
@@ -175,6 +182,8 @@
             <a href="catalog.html" class="button button-reserve1">Забронировать</a>
         </div>
     </div>
+    <!--/.discount -->
+
     <div class="contacts" id="contacts">
         <div class="info">
             <h2 class="screen_name">Как нас найти</h2>
@@ -196,6 +205,8 @@
         </div>
         <div id="map"></div>
     </div>
+    <!--/.contacts-->
+
     <footer>
         <nav>
             <ul>
@@ -211,4 +222,5 @@
         </p>
     </footer>
 </body>
+
 </html>
